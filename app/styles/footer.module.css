@@ -1,0 +1,151 @@
+/* .footer {
+    background-color: #f9ebe5;
+    padding: 2rem 1rem;
+    color: #5a2d20;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #d7c3bb;
+    padding-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .topSection {
+      grid-template-columns: repeat(5, 1fr);
+      text-align: left;
+    }
+  }
+  
+  .column {
+    font-size: 0.9rem;
+  }
+  
+  .column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .column p {
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .column p:hover {
+    color: #8b3628;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .bottomSection {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #8b3628;
+  }
+   */
+
+   .footer {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: #FFF5F5;
+    color: #1a1a1a;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  
+  .section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--techcloud-orange-orange-900, #642210);
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .contactItem svg {
+    margin-top: 0.25rem;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .links a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .links a:hover {
+    color: #000;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .socialLinks a {
+    color: #4a4a4a;
+    transition: color 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .socialLinks a:hover {
+    color: #000;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  

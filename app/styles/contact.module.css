@@ -1,0 +1,124 @@
+.container {
+    min-height: 100vh;
+    background-image: url('/contact-us-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    display: grid;
+    place-items: center;
+  }
+  
+.wrapper {
+    background: white;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+  
+@media (min-width: 768px) {
+    .wrapper {
+      grid-template-columns: 400px 1fr;
+    }
+  }
+  
+  .contactInfo {
+    background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
+    color: white;
+    padding: 3rem 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 3rem;
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .socialLinks a {
+    color: white;
+    transition: opacity 0.2s;
+  }
+  
+  .socialLinks a:hover {
+    opacity: 0.8;
+  }
+  
+  .formSection {
+    padding: 3rem 2rem;
+    background: white;
+  }
+  
+  .formGrid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .inputGroup {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .nameFields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  
+  .radioGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .error {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .submitButton {
+    background: #f4511e;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .submitButton:hover {
+    background: #e64a19;
+  }
+  
+  .submitButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  

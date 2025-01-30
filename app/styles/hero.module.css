@@ -1,0 +1,73 @@
+/* .section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000, rgba(127, 29, 29, 0.2));
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    display: block;
+    color: #ef4444;
+  }
+  
+  .description {
+    max-width: 42rem;
+    margin: 0 auto;
+    color: #d1d5db;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 3.75rem;
+    }
+  }
+  
+   */
+
+   .section {
+    position: relative;
+    height: 100vh;
+    
+  }
+  
+  .videoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .backgroundVideo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,147 @@
+.main{
+  background-color: #fff;
+  color: #000;
+}
+.hero {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+    background-image: url('/about/banner-mobile.png'); /* Default for mobile */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .heroOverlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .section {
+    padding: 1rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+
+@media screen and (max-width: 768px) {
+  .imageWrapper img {
+    height: 50%;
+    width: auto;
+    border-radius: 12px;
+  }
+  
+}
+  
+  @media (min-width: 768px) {
+    .hero{
+      background-image: url('/about/banner-desktop.png'); /* Default for mobile */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .imageWrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageWrapper img {
+    width: 60%;
+    height: 50%;
+    border-radius: 12px;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .text {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .faqSection {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+  }
+  
+  .faqGrid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .cta {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-image: linear-gradient(45deg, #ff5722, #ff7043);
+  }
+  
+  .ctaTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #ff5722;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  

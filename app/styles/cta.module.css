@@ -1,0 +1,63 @@
+.section {
+    position: relative;
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+    color: black;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    color: var(--techcloud-orange-orange-900, #642210);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content{
+    line-height: 30px;
+  }
+  .image{
+    width: 100%;
+    border-radius: 12px;
+  }
+  .description{
+    margin-top: 1rem;
+  }
+  .grid{
+    margin: 1rem 0 1rem 0;
+    text-align: start;
+  }
+
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 40px;
+    }
+    .container{
+      flex-direction: row;
+      text-align: start;
+    }
+    .image{
+      border-radius: 12px;
+      width: 400px;
+    }
+    .imageWrapper{
+      width: 50%;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+    }
+    .content{
+      width: 50%;
+    }
+  }
+  
+  

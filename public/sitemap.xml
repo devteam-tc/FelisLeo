@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
+  <url>
+    <loc>https://www.svmvavepub.com/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About page -->
+  <url>
+    <loc>https://www.svmvavepub.com/about/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Industries page -->
+  <url>
+    <loc>https://www.svmvavepub.com/industries/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Agriculture industry page -->
+  <url>
+    <loc>https://www.svmvavepub.com/industries/agriculture/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Education industry page -->
+  <url>
+    <loc>https://www.svmvavepub.com/industries/education/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

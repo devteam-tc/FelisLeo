@@ -1,0 +1,157 @@
+.main{
+    background-color: #f0f0f0;
+    color: #000
+  }
+    .hero {
+      position: relative;
+      height: 400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--techcloud-orange-orange-500, #EF5226);
+      margin-bottom: 1rem;
+      background-image: url('/gallery/gallery-bg-desktop.jpg'); 
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    
+    .heroTitle {
+      font-size: 4rem;
+      font-weight: 500;
+      margin: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .section {
+      padding: 2rem;
+      margin: auto;
+      height: 50vh;
+    }
+    .sectionTitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+@media (max-width: 768px) {
+    .hero{
+      background-image: url('/gallery/gallery-bg-desktop.jpg');
+      background-position: right;
+    }
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+}
+
+.main {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.galleryContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.imageWrapper {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  text-align: center;
+}
+
+.modalImage {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.closeButton,
+.prevButton,
+.nextButton {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.closeButton {
+  top: 1rem;
+  right: 1rem;
+}
+
+.prevButton {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nextButton {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .modalImage {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}

@@ -1,0 +1,90 @@
+.section {
+  padding: 5rem 0;
+  background: url('/services_background.png') no-repeat center center; /* Replace with your local image */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    color: var(--techcloud-orange-blue-blue-50, #E6F6FA);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .service:hover {
+    background: rgba(127, 29, 29, 0.5);
+  }
+  
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    color: #ef4444;
+  }
+  
+  .serviceTitle {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+    color: var(--techcloud-orange-blue-blue-50, #E6F6FA);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .description {
+    font-size: 0.875rem;
+    color: var(--techcloud-orange-blue-blue-50, #E6F6FA);
+    
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .serviceTitle{
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .service{
+      flex-direction: row;
+      text-align: start;
+      gap: 1vw;
+    }
+  }
+  
+  

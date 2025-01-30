@@ -1,0 +1,105 @@
+.ctaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f65314;
+    padding: 2rem;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    background-image: url('/Mobile_Bottom_CTA.png'); /* Default mobile background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the section covers full screen height */
+  }
+  
+  @media (min-width: 768px) {
+    .ctaSection {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3rem 5rem;
+      background-image: url('/Bottom_CTA.png'); /* Desktop background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 40vh;
+    }
+  }
+  
+  .textContent {
+    max-width: 500px;
+    z-index: 2;
+    text-align: left; /* Ensure text is aligned left on larger screens */
+    
+  }
+  
+  .textContent h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ctaButton {
+    color: var(--techcloud-orange-orange-500, #EF5226);
+    text-align: center;
+    font-family: Poppins;
+    padding: 0.5rem;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-left: none;
+    border-right: none;
+    border-top: 5px dashed;
+    border-bottom: 5px dashed;
+    background: #FFFBFA;
+  }
+  
+  .ctaButton:hover {
+    background-color: white;
+    color: var(--techcloud-orange-orange-500, #EF5226);
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    margin-top: 5rem;
+    z-index: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .imageContainer {
+      height: 300px;
+      margin-top: 0;
+    }
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 768px) {
+    .textContent {
+      text-align: center; /* Center text on mobile */
+      padding-bottom: 1.5rem;
+      margin-top: 40%;
+    }
+  
+    .ctaButton {
+      font-size: 1.1rem;
+      width: auto;
+    }
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    .textContent {
+      text-align: left;
+      margin-right: 2rem;
+    }
+  
+    .ctaButton {
+      font-size: 1.2rem;
+    }
+  }
+  
